@@ -9,14 +9,3 @@ This project uses Terraform to deploy a static personal portfolio website to Goo
 - IAM binding for public access
 - Simple portfolio (HTML + CSS)
 
-## 📂 Project Structure
-terraform-gcp-portfolio-site/
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── website/
-│ ├── index.html
-│ └── style.css
-├── .gitignore
-└── README.md
-
