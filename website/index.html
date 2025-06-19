@@ -1,15 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Cloud Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terraform GCP Portfolio Project</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello, I'm Chinonso Onyechi</h1>
-  <p>Professional Cloud Architect | GCP + Terraform</p>
-  <ul>
-    <li><a href="https://github.com/iamonyechi" target="_blank">GitHub</a></li>
-    <li><a href="https://linkedin.com/in/chinonsojonyechi" target="_blank">LinkedIn</a></li>
-  </ul>
+  <header>
+    <h1>Terraform GCP Portfolio Website</h1>
+    <p>By Chinonso Onyechi – Cloud Architect</p>
+  </header>
+
+  <section>
+    <h2>Project Overview</h2>
+    <p>
+      This project demonstrates how to deploy a static website via Google Cloud Storage using the Infrastructure as Code (IaC) tool Terraform, fully automated and managed as code. The inspiration behind this project is to provide a beginner-friendly example for those new to cloud computing and Terraform—a practical, approachable starting point to build confidence and skills.
+    </p>
+  </section>
+
+  <section>
+    <h2>Why This Project?</h2>
+    <p>
+      When I started my cloud journey, I didn’t know where to begin. This project serves as the foundation for a cloud project playbook aimed at beginners—a resource I wish I had when starting out. It guides aspiring professionals through fundamental cloud concepts and Terraform practices, helping them build a real, deployable project from scratch.
+    </p>
+  </section>
+
+  <section>
+    <h2>Steps Taken</h2>
+    <ol>
+      <li>Installed Terraform & Google Cloud SDK on my local machine.</li>
+      <li>Authenticated with Google Cloud using <code>gcloud auth login</code>.</li>
+      <li>Enabled the Google Cloud Storage API.</li>
+      <li>Created Terraform configuration files (<code>main.tf</code>, <code>variables.tf</code>, <code>outputs.tf</code>).</li>
+      <li>Configured a public Google Cloud Storage bucket with website hosting enabled.</li>
+      <li>Defined IAM policies to allow public read access to the bucket contents.</li>
+      <li>Uploaded static website files (HTML + CSS) as bucket objects using Terraform resources.</li>
+      <li>Initialized and applied the Terraform plan to deploy all resources.</li>
+      <li>Tested the live website via the Terraform output URL.</li>
+      <li>Version controlled the entire project, including infrastructure and website source code, using GitHub for professional collaboration and portfolio presentation.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Skills Showcased</h2>
+    <ul>
+      <li>Writing reusable Terraform code</li>
+      <li>Managing Google Cloud resources via Terraform</li>
+      <li>Infrastructure as Code best practices</li>
+      <li>Using Terraform outputs for easy verification</li>
+      <li>Version control integration with GitHub</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Explore More</h2>
+    <p>
+      Explore the full source code, detailed documentation, and deployment instructions on <a href="https://github.com/iamonyechi/gcp-terraform-portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>. This repo serves as both a learning resource and a professional portfolio showcase.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Chinonso Onyechi</p>
+  </footer>
 </body>
 </html>
