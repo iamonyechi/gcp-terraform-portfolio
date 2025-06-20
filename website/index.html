@@ -76,6 +76,19 @@
     infrastructure changes.
   </p>
 
+  <h2>🔒 Security Measures</h2>
+<p>
+  This project follows industry best practices to ensure secure and reliable deployments:
+</p>
+<ul>
+  <li>🔑 <strong>Secrets Management:</strong> Google Cloud service account keys are stored securely as GitHub Actions secrets, avoiding hardcoding sensitive information in the codebase.</li>
+  <li>👤 <strong>Principle of Least Privilege:</strong> A dedicated service account with only the necessary roles is used to limit access scope within Google Cloud.</li>
+  <li>🛡️ <strong>Trusted Automation:</strong> The CI/CD pipeline uses official, verified GitHub Actions for authentication and Terraform execution.</li>
+  <li>🔍 <strong>Infrastructure as Code:</strong> Terraform ensures auditable, repeatable deployments and reduces manual misconfigurations.</li>
+  <li>🌐 <strong>Public Hosting Considerations:</strong> The static website is hosted on a public Google Cloud Storage bucket with no sensitive data exposed.</li>
+</ul>
+
+
   <div class="links">
     <h2>🔗 Connect With Me</h2>
     <p>
