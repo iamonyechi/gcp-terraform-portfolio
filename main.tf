@@ -28,3 +28,14 @@ resource "google_storage_bucket_object" "style" {
   source       = "website/style.css"
   content_type = "text/css"
 }
+
+# ✅ New: Allow public read access to all objects in the bucket
+resource "google_storage_bucket_iam_binding" "public_read" {
+  bucket = google_storage_bucket.portfolio_bucket.name
+
+  role = "roles/storage.objectViewer"
+
+  members = [
+    "allUsers",
+  ]
+}
