@@ -1,16 +1,15 @@
 variable "project_id" {
-  description = "Your GCP Project ID"
+  description = "Your Google Cloud project ID"
   type        = string
-  default     = "terraform-portfolio-project"
+}
+
+variable "bucket_name" {
+  description = "Unique name for the GCS bucket (lowercase letters, numbers, and dashes only)"
+  type        = string
 }
 
 variable "region" {
   description = "GCP region for resources"
-  default     = "us-east1" # Cheapest region
-}
-
-variable "bucket_name" {
-  description = "Globally unique bucket name"
   type        = string
-  default     = "terraformportfolioprojectstorage"
+  default     = "us-east1" # Cheapest US region
 }
